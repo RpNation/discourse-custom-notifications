@@ -3,7 +3,7 @@ en:
     admin:
       site_settings:
         categories:
-          TODO_plugin_name: "Plugin Name"
+          discourse_custom_notifications: "Discourse Custom Notifications"
   js:
-    discourse_plugin_name:
+    discourse_custom_notifications:
       placeholder: placeholder

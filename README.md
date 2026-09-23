@@ -1,4 +1,4 @@
-# **Plugin Name** Plugin
+# **Discourse Custom Notifications** Plugin
 
 **Plugin Summary**
 

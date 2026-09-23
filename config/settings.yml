@@ -1,4 +1,4 @@
-TODO_plugin_name:
-  plugin_name_enabled:
+discourse_custom_notifications:
+  discourse_custom_notifications_enabled:
     default: false
     client: true

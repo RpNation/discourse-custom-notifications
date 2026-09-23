@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module ::MyPluginModule
+module ::DiscourseCustomNotifications
   class ExamplesController < ::ApplicationController
     requires_plugin PLUGIN_NAME
 
