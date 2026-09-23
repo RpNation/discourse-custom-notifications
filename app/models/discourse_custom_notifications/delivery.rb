@@ -29,3 +29,21 @@ module DiscourseCustomNotifications
     end
   end
 end
+
+# == Schema Information
+#
+# Table name: discourse_custom_notification_deliveries
+#
+#  id              :bigint           not null, primary key
+#  status          :string           default("pending"), not null
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  broadcast_id    :bigint           not null
+#  notification_id :bigint
+#  user_id         :integer          not null
+#
+# Indexes
+#
+#  idx_custom_notification_pending    (broadcast_id,id) WHERE ((status)::text = 'pending'::text)
+#  idx_custom_notification_recipient  (broadcast_id,user_id) UNIQUE
+#

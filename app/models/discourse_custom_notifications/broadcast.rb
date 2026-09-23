@@ -79,3 +79,29 @@ module DiscourseCustomNotifications
     end
   end
 end
+
+# == Schema Information
+#
+# Table name: discourse_custom_notification_broadcasts
+#
+#  id              :bigint           not null, primary key
+#  last_error      :text             default(""), not null
+#  link_title      :string(100)      default(""), not null
+#  link_url        :string(2048)     default(""), not null
+#  message         :string(500)      not null
+#  payload_digest  :string           not null
+#  sender_username :string           not null
+#  sent_count      :integer          default(0), not null
+#  skipped_count   :integer          default(0), not null
+#  status          :string           default("queued"), not null
+#  total_count     :integer          default(0), not null
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  created_by_id   :integer          not null
+#  request_id      :uuid             not null
+#  sender_user_id  :integer          not null
+#
+# Indexes
+#
+#  idx_custom_notification_request  (created_by_id,request_id) UNIQUE
+#
