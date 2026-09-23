@@ -4,6 +4,7 @@
 # about: Send targeted, audited in-app notifications from the admin interface
 # version: 0.0.1
 # authors: RpNation
+# url: https://github.com/RpNation/discourse-custom-notifications
 # required_version: 2026.3.0
 
 enabled_site_setting :discourse_custom_notifications_enabled
