@@ -1,1 +1,10 @@
 en:
+  site_settings:
+    discourse_custom_notifications_enabled: "Allow administrators to send targeted in-app notifications."
+  discourse_custom_notifications:
+    invalid_filters: "One or more recipient filters are invalid."
+    invalid_sender: "Choose an existing registered sender, or leave the sender blank for system."
+    invalid_link: "Use a site-relative path or an HTTP or HTTPS URL."
+    payload_too_long: "The notification is too long after encoding. Shorten its message or link title."
+    invalid_preview: "Preview these exact notification settings again before sending."
+    request_conflict: "This request ID was already used for different notification settings."

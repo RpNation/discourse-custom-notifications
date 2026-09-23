@@ -1,0 +1,66 @@
+.custom-notifications {
+  &__form {
+    max-width: 48em;
+  }
+
+  &__preview {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+    padding: 1em;
+    border: 1px solid var(--primary-low);
+    border-radius: var(--d-border-radius);
+    background: var(--primary-very-low);
+
+    > .d-icon {
+      flex-shrink: 0;
+      margin-block-start: 0.2em;
+      color: var(--tertiary);
+    }
+  }
+
+  &__body {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
+  &__url {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  &__help {
+    color: var(--primary-high);
+  }
+
+  &__audience-count,
+  &__status {
+    font-weight: bold;
+  }
+
+  &__samples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em 1.5em;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-block-start: 1em;
+  }
+
+  &__progress {
+    width: 100%;
+    accent-color: var(--tertiary);
+  }
+
+  &__message-link {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow-wrap: anywhere;
+  }
+}
